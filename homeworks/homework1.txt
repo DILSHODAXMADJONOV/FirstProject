@@ -1,0 +1,637 @@
+namespace g10
+{
+    internal class Program
+    {
+        static void Main(string[] texts)
+        {
+            ////////1 - missol//////
+            //Console.Write("son : ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var ones = number % 10;
+            //var tens = number / 10 % 10;
+            //var result = number / 100 * 100 + ones * 10 + tens;
+
+            //Console.WriteLine(result);
+
+            //////// 2 - missol///////////
+            //Console.Write("son : ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var ones = number % 10;
+            //var tens = number / 10 % 10;
+            //var hundreds = number / 100 % 10;
+            //var result = tens * 100 + hundreds * 10 + ones;
+
+            //Console.WriteLine(result);
+
+            /////////////3 - missol//////////
+            //Console.Write("son : ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var ones = number % 10;  
+            //var tens = number / 10 % 10;
+            //var hundreds = number / 100 % 10;
+            //var thousands = number / 1000;
+            //var result = ones * 1000 + hundreds * 100 + tens * 10 + thousands;
+
+            //Console.WriteLine(result);
+
+            ///////////4 - missol//////////
+            //Console.Write("Gb; ");
+            //var gbsum = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine(gbsum * 1024);
+
+            ////////5 - missol//////
+            //Console.Write("Gb; ");
+            //var gbsum = Convert.ToInt32(Console.ReadLine());
+
+            //var gbBayt = gbsum * 1024 * 1024 * 1024l ;
+            //var gbBit = gbBayt * 8l;
+
+            //Console.WriteLine(gbBit);
+
+            //////6 - missol///////
+            //Console.Write("Gb; ");
+            //var gbsum = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine(gbsum / 1024.0);
+
+            //////////7 - missol/////////
+            //Console.Write("Gb; ");
+            //var gbsum = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine(gbsum / 2);
+
+            //////////8 - missol/////// 
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var resault = number * number * number;
+            //resault = resault * resault;
+
+            //Console.WriteLine(resault);
+
+            /////////9-missol//////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var resault = number * number;
+            //resault = resault * resault;
+            //resault = resault * resault;
+
+            //Console.WriteLine(resault);
+
+            ///////////10 - 11 missol////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number % 2 == 0)
+            //{
+            //    Console.WriteLine("Juft son");
+            //}
+            //else
+            //{ 
+            //    Console.WriteLine("Toq son");
+            //}
+
+            //////////12 - missol///////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number >= 10 && number < 100)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //} 
+
+            ////////////13 - missol///////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number >= 1000 && number < 10000)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ////////////////14 - missol///////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number >= 10 && number < 100 && number % 2 == 0)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            //////////////15 - missol///////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number >= 100 && number < 1000 && number % 2 == 1)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            //////////////16-missol////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number >= 1000 && number < 10000 && number % 2 == 0)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ////////////17 - missol/////////
+            //Console.Write("1 son; ");
+            //var firstnumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstnumber % 2 == 1 && secondnumber % 2 == 1)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ////////////////18 - missol////////////
+            //Console.Write("1 son; ");
+            //var firstnumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstnumber % 2 == 0 && secondnumber % 2 == 0)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////19 - missol////////////
+            //Console.Write("1 son; ");
+            //var firstnumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstnumber % 2 == 1 && secondnumber % 2 == 1 && firstnumber >= 10 && firstnumber < 100 && secondnumber >= 10 && secondnumber < 100)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////////20 - missol////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var ones = number % 10;
+            //var tens = number / 10;
+
+            //if (ones == tens)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ////////////////21 - missol//////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var ones = number % 10;
+            //var tens = number / 10;
+            //var sum = ones + tens;
+
+            //if (sum > 10)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+            /////////////////22 - missol////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var ones = number % 10;
+            //var tens = number / 10;
+            //var sum = ones * tens;
+
+            //if (sum > 20)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            //////////////23 - missol///////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var ones = number % 10;
+            //var tens = number / 10;
+
+            //if (ones % 2 == 1 && tens % 2 == 1)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ////////////24 - missol////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var ones = number % 10;
+            //var tens = number / 10;
+
+            //if (ones > 5 && tens > 5)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////25 - missol/////////////
+            //Console.Write("a ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number % 3 == 0)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////26 - missol///////////
+            //Console.Write("a ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number % 7 == 0)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////////27 - missol/////////////
+            //Console.Write("a ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number % 3 == 0 && number % 8 == 0)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////////28 - missol//////////////
+            //Console.Write("a ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number % 7 == 0 || number % 9 == 0)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////29 - missol///////////////
+            //Console.Write("a ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number % 5 == 1)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ///////////////////30 - missol////////////
+            //Console.Write("a ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //if (number % 4 == 0 && number % 3 == 1)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ///////////////31 - missol///////////////
+            //Console.Write("a; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("b; ");
+            //var secondNumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber > secondNumber)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ////////////////32 - missol/////////////
+            // Console.Write("a; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("b; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber == secondNumber)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ///////////////33 - missol/////////////
+            //Console.Write("a; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("b; ");
+            //var secondNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("c; ");
+            //var threeNumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber > secondNumber && firstNumber > threeNumber)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////////34 - missol/////////////
+            //Console.Write("a; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("b; ");
+            //var secondNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("c; ");
+            //var threeNumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (threeNumber > secondNumber && firstNumber < threeNumber)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////////35 - missol/////////////
+            //Console.Write("a; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("b; ");
+            //var secondNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("c; ");
+            //var threeNumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber > secondNumber && threeNumber > secondNumber)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////////36 - missol////////////
+            //Console.Write("a; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("b; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //var sum = secondnumber * 2;
+
+            //if (firstNumber > sum)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            ///////////////////37 - missol////////////
+            //Console.Write("a; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("b; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //var sum = firstNumber * 5;
+
+            //if (secondnumber > sum)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////////////38 - missol////////////////
+            //Console.Write("a; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("b; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //var sumfirst = firstNumber * 4;
+            //var sumsecond = secondnumber * 4;
+
+            //if (firstNumber > sumsecond || secondnumber > sumfirst)
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+
+            /////////////////////39 - missol////////////////
+            //Console.Write("1 - son; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 - son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber > sumsecond)
+            //{
+            //    Console.WriteLine(firstNumber);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(secondnumber);
+            //}
+            ////////////////40 - missol///////////
+            //Console.Write("1 - son; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 - son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber < sumsecond)
+            //{
+            //    Console.WriteLine(firstNumber);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(secondnumber);
+            //}
+
+            //////////////41 - missol////////////
+            //Console.Write("1 - son; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 - son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber >= 10 && 100 > firstNumber && secondnumber >= 10 && 100 > secondnumber)
+            //{
+            //    Console.WriteLine(firstNumber + secondnumber);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(firstNumber * secondnumber);
+            //}
+
+            ///////////////42 - missol//////////////
+            /////Console.Write("1 - son; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 - son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber % 2 == 0 && secondnumber & 2 == 0)
+            //{
+            //    Console.WriteLine(firstNumber + secondnumber);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(firstNumber * secondnumber);
+            //}
+
+            /////////////42 - missol//////////////
+            //Console.Write("1 - son; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 - son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+
+            //if (firstNumber % 2 == 1 && secondnumber % 2 == 1)
+            //{
+            //    Console.WriteLine(firstNumber + secondnumber);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(firstNumber);
+            //    Console.WriteLine(secondnumber);
+            //}
+            /////////////43 - missol///////////
+            //Console.Write("1 - son; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 - son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("3 - son; ");
+            //var threeNumber = Convert.ToInt32(Console.ReadLine());
+
+            //var sum = 0;
+
+            //if (firstNumber % 2 == 1)
+            //{
+            //    sum++;
+            //}
+            //if (secondnumber % 2 == 1)
+            //{
+            //    sum++;
+            //}
+            //if (threeNumber % 2 == 1)
+            //{
+            //    sum++;
+            //}
+            //Console.WriteLine(sum + " tasi toq");
+
+            ///////////////////45 - missol/////////////
+            //Console.Write("1 - son; ");
+            //var firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("2 - son; ");
+            //var secondnumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("3 - son; ");
+            //var threeNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("4 - son; ");
+            //var fourNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("5 - son; ");
+            //var fiveNumber = Convert.ToInt32(Console.ReadLine());
+
+            //var sum = 0;
+
+            //if (firstNumber % 2 == 0)
+            //{
+            //    sum++;
+            //}
+            //if (secondnumber % 2 == 0)
+            //{
+            //    sum++;
+            //}
+            //if (threeNumber % 2 == 0)
+            //{
+            //    sum++;
+            //}
+            //if (fourNumber % 2 == 0)
+            //{
+            //    sum++;
+            //}
+            //if (fiveNumber % 2 == 0)
+            //{
+            //    sum++;
+            //}
+
+            //Console.WriteLine(sum + " tasi juft");
+        }
+    }
+}
