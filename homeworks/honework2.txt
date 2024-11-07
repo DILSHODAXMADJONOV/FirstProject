@@ -1,0 +1,107 @@
+namespace g10
+{
+    internal class Program
+    {
+        static void Main(string[] texts)
+        {
+            
+            /////////////1////////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var sum = 0;
+
+            //while (number > 0)
+            //{
+            //    number = number / 10;
+            //    sum++;
+            //}
+            //Console.WriteLine(sum + " xona");
+
+            //////////////2/////////////
+
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var sum = 0;
+
+            //while (number > 0)
+            //{
+            //    if (number % 10 % 2 == 0)
+            //    {
+            //        sum++;
+            //    }
+            //    number /= 10;
+            //}
+            //Console.WriteLine(sum + " ta juft");
+
+            /////////////3///////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var amount = 0;
+
+            //for (int i = 0; i < number; i++)
+            //{
+            //    amount++;
+            //    Console.Write("son; ");
+            //    number = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //Console.WriteLine("Miqdor: " + amount);
+
+            /////////////4///////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var sum = 0;
+
+            //for (int i = 0; i < number; i++)
+            //{
+            //    if (number > 50)
+            //    {
+            //        sum += number;
+            //    }
+            //    Console.Write("son; ");
+            //    number = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //Console.WriteLine("Miqdor: " + sum);
+
+            /////////////5/////////////
+            //Console.Write("son; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var check = false;
+            //while (number > 0)
+            //{
+            //    number = number / 10;
+            //    if (number % 10 == 5)
+            //    {
+            //        check = true;
+            //        break;
+            //    }
+            //}
+            //Console.WriteLine(check);
+
+            //////////////6//////////////
+            //Console.Write("N; ");
+            //var number = Convert.ToInt32(Console.ReadLine());
+
+            //var sum = 1;
+            //while (sum < number)
+            //{
+            //    sum = sum * 3; ;
+
+            //}
+            //if (number == sum )
+            //{
+            //    Console.WriteLine(true);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(false);
+            //}
+        }
+    }
+}
