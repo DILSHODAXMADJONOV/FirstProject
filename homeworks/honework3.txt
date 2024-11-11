@@ -1,0 +1,273 @@
+namespace g10
+{
+    internal class Program
+    {
+        ///1.	helloName
+        ///Name nomli satr berilgan, masalan “Aziz”, ushbu korinishda natijani qaytaring(return qiling): “Hello Aziz!”.
+
+        public static string HelloName(string name)
+        {
+            var response = $"Hello {name}";
+            return response;
+        }
+
+        ////2.	makeAbba
+        ////Ikkita a va b satr berilgan.Natijani abba ketma-ketlikda qaytaring. Masalan, “Hi” va “Bye” satrlar bolsa, natija “HiByeByeHi” bolsin.
+
+        public static string MakeAbba(string fristWord, string secondWord)
+        {
+            var response = fristWord + secondWord + secondWord + fristWord;
+            return response;
+        }
+
+        //3.   makeOutWord
+        //2ta a va b satr berilgan.a satr uzunligi 4ga tengligi malum.a satrni 2 va 3-harflari o’rtasiga b satrni joylashtirib natijani qaytaring.
+
+        public static string MakeOutWord(string fristWord, string secondWord)
+        {
+            var response = fristWord.Insert(2, secondWord);
+            return response;
+        }
+
+        //4.	extraEnd. 
+        // Uzunligi kamida 2ga teng bolgan satr berilgan.Shu satrni oxirgi 2ta harfini  3 marta yonma-yon qilib natijani qaytaring.
+
+        public static string ExtraEend(string fristWord)
+        {
+            var subText = fristWord.Substring(fristWord.Length - 2, 2);
+            var response = $"{subText}{subText}{subText}";
+            return response;
+        }
+
+        //5.	firstTwo
+        //Satr berilgan.Ushbu satrni birinchi 2ta harfini returnga qaytaring.Agar satr uzunligi 2dan kichik bolsa, osha satrni ozini qaytaring.
+
+        public static string FirstTwo(string fristWord)
+        {
+            var response = fristWord.Substring(0, 2);
+            return response;
+        }
+
+        ///6.	firstHalf
+        //Juft uzunlikdagi satr berilgan.Shu satrni birinchi yarmini qaytaring.
+        public static string firstHalf(string fristWord)
+        {
+            var lenString = fristWord.Length;
+            var response = fristWord.Substring(0, lenString / 2);
+            return response;
+        }
+
+        //7.	WithouEnd
+        //Kamida 2ta harfdan iborat satr berilgan.Shu satrni boshidagi va oxiridagi harflarisiz natijani qaytaring.
+
+        //public static string WithouEnd(string fristWord)
+        //{
+        //    if (fristWord.Length <= 2)
+        //    {
+        //        return fristWord.Substring(1, fristWord.Length - 2);
+        //    }
+        //}
+
+        // 8.	comboString
+        //2ta a va b satrlar berilgan.Shu satrlarni eng kichik uzunlikdagisi short, eng uzuni long bo’lsin. short+long+short korinishda natijani qaytaring.
+
+        public static string ComboString(string fristWord, string secondWord)
+        {
+            if (fristWord.Length > secondWord.Length)
+            {
+                return secondWord + fristWord + secondWord;
+            }
+            else
+            {
+                return fristWord + secondWord + fristWord;
+            }
+        }
+
+        //9.	nonStart
+        //Uzunligi kamida 1ga teng bo’lgan 2ta satr berilgan.Ushbu satrlarni 1-harflarini hisobga olmasdan, satrlarni qo’shib natijani qaytaring.
+
+        public static string NonStart(string fristWord, string secondWord)
+        {
+            return fristWord.Substring(1) + secondWord.Substring(1);
+        }
+
+        //10.	left2
+        //Satr berilgan.Satrni birinchi 2ta harfini olib, davomiga qo’yib, natijani qaytaring.
+
+        public static string Left2(string fristWord)
+        {
+            return fristWord.Substring(2) + fristWord.Remove(2);
+        }
+
+        //11 tushunmadim
+
+        //12.	nTwice
+        //Satr va n soni berilgan.Satrni birinchi n ta harfi va oxirgi n ta harfidan iborat yangi satrni qaytaring.
+
+        public static string NTwice(string fristWord, int number)
+        {
+            return fristWord.Substring(0, number) + fristWord.Substring(fristWord.Length - number, number);
+        }
+
+        ////13.	middleThree
+        ////Toq uzunlikdagi satr berilgan.Satrni o’rtasidagi 3ta harfdan iborat yangi satrni qaytaring.
+
+        public static string MiddleThree(string fristWord)
+        {
+            return fristWord.Substring(fristWord.Length / 2 - 1, 3);
+        }
+
+        //14.	conCat
+        //2ta a va b satrlar berilgan.a satr davomidan b satrni qoyib natijani qaytaring.Agar a satrni oxirgi belgisi b satrni 1-belgisi bilan bir xil bolsa, bu belgilarni 1tasini hisobga oling.
+
+        public static string ConCat(string fristWord, string secondWord)
+        {
+            if (fristWord.EndsWith(secondWord.Substring(0, 1)))
+            {
+                return fristWord + secondWord.Substring(1);
+            }
+            else
+            {
+                return fristWord + secondWord;
+            }
+        }
+
+        //15.	lastTwo
+        //Satr berilgan.Satrni oxirgi 2ta harfini almashtirgan holda natijani qaytaring.
+
+        public static string LastTwo(string fristWord)
+        {
+            return fristWord.Substring(0, fristWord.Length - 2) + fristWord[fristWord.Length - 1] + fristWord[fristWord.Length - 2];
+        }
+
+        //16.	seeColor
+        //Satr berilgan.Agar satr “red” yoki “blue” bilan boshlansa, shu rangni qaytaring.aks holda bosh stringni qaytaring.
+
+        public static string SeeColor(string fristWord)
+        {
+            if (fristWord.StartsWith("red"))
+            {
+                return "red";
+            }
+            else if (fristWord.StartsWith("blue"))
+            {
+                return "blue";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        //17.	frontAgain
+        //Satr berilgan.Agar satrni oxiri satrni birinchi 2ta belgisi bilan tugasa, true qaytaring.
+
+        public static string FrontAgain(string fristWord)
+        {
+            if (fristWord.Substring(0, 2) == fristWord.Substring(fristWord.Length - 2))
+            {
+                return "true";
+            }
+            else
+            {
+                return "folse";
+            }
+
+        }
+
+        //18.	minCat
+        //2ta a va b satr berilgan.Katta satrni oxirini kichik satr uzunligicha qoldiring va yakunda ikkita bir xil uzunlikdagi satrlarni qoshib qaytaring.Agar satrlar uzunligi teng bolsa, oddiygina shularni qoshib qaytaring.
+
+        public static string MinCat(string fristWord, string secondWord)
+        {
+            if (fristWord.Length == secondWord.Length)
+            {
+                return fristWord + secondWord;
+            }
+
+            if (fristWord.Length > secondWord.Length)
+            {
+                return fristWord.Substring(fristWord.Length - secondWord.Length) + secondWord;
+            }
+            else
+            {
+                return secondWord.Substring(secondWord.Length - fristWord.Length) + fristWord;
+            }
+        }
+
+        //19.	deFront
+        //Satr berilgan.Satrni boshidagi 2ta belgisini olib tashlang, lekin birinchi belgi ‘a’ bolsa, qoldiring, ikkinchi belgi ‘b’ bolsa, buni ham qoldiring.Natijani qaytaring
+
+        public static string DeFront(string fristWord)
+        {
+            if (fristWord.StartsWith("a") || fristWord.StartsWith("b"))
+            {
+                return fristWord;
+            }
+            else
+            {
+                return fristWord.Substring(2);
+            }
+        }
+
+        //20.	withoutX
+        //Satr berilgan.Agar satrni birinchi yoki oxirgi belgisi ‘x’ bolsa, shu ‘x’larni olib tashlab, satrni qaytaring, aks holda satrni o’zini qaytaring.
+
+        public static string WithoutX(string fristWord)
+        {
+            if (fristWord.StartsWith("x"))
+            {
+                fristWord = fristWord.Substring(1);
+            }
+            if (fristWord.EndsWith("x"))
+            {
+                fristWord = fristWord.Substring(0, fristWord.Length - 1);
+            }
+            return fristWord;
+        }
+
+        //1.	catDog
+        //Satr berilgan.Shu satrda “cat” va “dog” so’zlari teng miqdorda uchrasa, true qaytaring.
+
+        public static string CatDog(string fristWord)
+        {
+            if (fristWord.Contains("cat") && fristWord.Contains("dog"))
+            {
+                return "true";
+            }
+            else
+            {
+                return "false";
+
+            }
+        }
+
+        //3.	endOther
+        //2ta a va b satr berilgan.shu satrlardan biri ikkinchisi bilan tugasa, true qaytaring.bunda katta-kichik harflar farqlanmaydi.
+
+        public static bool EndOther(string fristWord, string secondWord)
+        {
+            fristWord = fristWord.ToLower();
+            secondWord = secondWord.ToLower();
+
+            return fristWord.EndsWith(secondWord) || secondWord.EndsWith(fristWord);
+        }
+
+        //4. Satr berilgan. agar shu satr “xyz” so’zini o’z ichiga olsa, true qaytaring, lekin nuqta(.) belgisi davomidan “xyz” uchrasa hisobga olinmasin.
+
+        public static bool checkXyz(string fristWord)
+        {
+            var dotIndex = fristWord.IndexOf('.');
+            fristWord = fristWord.Substring(0, dotIndex);
+
+            return fristWord.Contains("xyz");
+        }
+        static void Main(string[] texts)
+        {
+            Console.Write("text; ");
+            var text = Console.ReadLine();
+
+            Console.WriteLine(checkXyz(text));
+        }
+    }
+}
