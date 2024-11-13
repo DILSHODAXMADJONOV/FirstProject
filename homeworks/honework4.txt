@@ -1,0 +1,376 @@
+namespace g10
+{
+    internal class Program
+    {
+        /////////Oson Vazifalar (10 ta vazifa) - 9 /////
+        //1
+        //public static void OppositeString(string text, out string result)
+        //{
+        //    result = string.Empty;
+
+        //    for (var i = text.Length - 1; i >= 0; i--)
+        //    {
+        //        result += text[i];
+        //    }
+        //}
+        //static void Main(string[] texts)
+        //{
+        //    var text = Console.ReadLine();
+        //    string result;
+
+        //    OppositeString(text, out result);
+        //    Console.WriteLine(result);
+        //}
+
+        //2 
+        //public static void VowelConsonant(string text, out int vowelNumer, out int consonantNumer)
+        //{
+        //    vowelNumer = 0;
+        //    consonantNumer = 0;
+        //    for (int i = 0; i < text.Length; i++)
+        //    {
+        //        if (text[i] == 'a' || text[i] == 'e' || text[i] == 'u' || text[i] == 'i' || text[i] == 'o'
+        //            || text[i] == 'A' || text[i] == 'E' || text[i] == 'U' || text[i] == 'I' || text[i] == 'O')
+        //        {
+        //            vowelNumer++;
+        //        }
+        //        else
+        //        {
+        //            consonantNumer++;
+        //        }
+
+        //    }
+        //}
+
+        //static void Main(string[] texts)
+        //{
+        //    var text = Console.ReadLine();
+        //    int vowelNumer;
+        //    int consonantNumer;
+        //    VowelConsonant(text, out vowelNumer, out consonantNumer);
+        //    Console.WriteLine(vowelNumer);
+        //    Console.WriteLine(consonantNumer);
+        //}
+
+        //3
+        //public static void IsPalidrom(string text, out bool result)
+        //{
+        //    var palidromText = string.Empty;
+        //    text = text.ToLower();
+
+        //    for (int i = text.Length - 1; i >= 0; i--)
+        //    {
+        //        palidromText += text[i];
+        //    }
+        //    result = palidromText == text;
+        //}
+
+        //static void Main(string[] texts)
+        //{
+        //    var text = Console.ReadLine();
+        //    bool result;
+        //    IsPalidrom(text, out result);
+        //    Console.WriteLine(result);
+        //}
+
+        //4
+        //public static void TextNumber(string text, out int number)
+        //{
+        //    number = 1;
+        //    foreach (char charecter in text)
+        //    {
+        //        if(charecter == ' ')
+        //        {
+        //            number++;
+        //        }
+        //    }
+        //}
+        //static void Main(string[] texts)
+        //{
+        //    var text = Console.ReadLine();
+        //    int result;
+        //    TextNumber(text, out result);
+        //    Console.WriteLine(result);
+        //}
+
+        //5
+        //static void Main(string[] texts)
+        //{
+        //    var text = Console.ReadLine();
+
+        //    for (int i = 0; i < text.Length; i++)
+        //    {
+        //        var result = 0;
+        //        for (int j = i; j < text.Length; j++)
+        //        {
+        //            if(text[i] == text[j])
+        //            {
+        //                result++;
+        //            }
+        //        }
+        //        if(result > 1)
+        //        {
+        //            Console.WriteLine($"{text[i]} ; {result}");
+        //        }
+
+        //    }
+        //}
+
+        //6
+        //static void Main(string[] args)
+        //{
+        //    var text = Console.ReadLine();
+        //    var result = text.Replace(" ", "");
+
+        //    Console.WriteLine(result);
+        //}
+
+        //7
+        //static void Main(string[] args)
+        //{
+        //    Console.Write("text; ");
+        //    var text = Console.ReadLine();
+        //    Console.Write("'?' ");
+        //    var firstText = Console.ReadLine();
+        //    Console.Write("belgi ");
+        //    var secondText = Console.ReadLine();
+
+        //    var result = text.Replace(firstText, secondText);
+
+        //    Console.WriteLine(result);
+        //}
+
+        //8
+        //static void Main(string[] args)
+        //{
+        //    var text = Console.ReadLine();
+        //    var number = 0;
+
+        //    foreach (char charecter in text)
+        //    {
+        //        number++;
+        //    }
+        //    Console.WriteLine(number);
+        //}
+
+        //9
+        //static void Main(string[] texts)
+        //{
+        //}
+
+        //10
+        //static void Main(string[] texts)
+        //{
+        //    var text = Console.ReadLine();
+
+        //    var result = string.Empty;
+
+        //    foreach (var charecter in text)
+        //    {
+        //        if (char.IsUpper(charecter) is true)
+        //        {
+        //            result += char.ToLower(charecter);
+        //        }
+        //        else if (char.IsLower(charecter) is true)
+        //        {
+        //            result += char.ToUpper(charecter);
+        //        }
+        //        else
+        //        {
+        //            result += charecter;
+        //        }
+        //    }
+
+        //    Console.WriteLine(result);
+        //}
+
+
+        //////////////O'rtacha Murakkab Vazifalar (5 ta vazifa) - 3////////////
+        //////1Ikkita string berilgan. Ular anagram bo'lsa, bir-biriga mos harflar va bir xil son bilan tashkil topadi. Masalan, "salom" va "lasom" bir xil harflarga ega, lekin tartibi boshqacha.
+        //Misol: Kiritish: "salom", "lasom", Natija: true
+
+        //public static void AnagramText(string firstText, string secondText, out bool result)
+        //{
+        //    var collectNumber = 0;
+        //    result = false;
+        //    for (int i = 0; i < firstText.Length; i++)
+        //    {
+        //        for (int j = 0; j < secondText.Length; j++)
+        //        {
+        //            if (firstText[i] == secondText[j])
+        //            {
+        //                collectNumber++;
+        //            }
+        //        }
+        //    }
+        //    if (collectNumber == secondText.Length)
+        //    {
+        //        result = true;
+        //    }
+        //}
+        //static void Main(string[] texts)
+        //{
+        //    var FirstText = Console.ReadLine();
+        //    var secondText = Console.ReadLine();
+
+        //    bool result;
+        //    AnagramText(FirstText, secondText, out result);
+
+        //    Console.WriteLine(result);
+        //}
+
+        //2 Berilgan gapdagi eng uzun so'zni topish kerak. So'zlar orasidagi bo'sh joylarga qarab ajratiladi.
+        //Misol: Kiritish: "Juda tez tulki o'rmondan yugurib o'tdi", Natija: "yugurib"
+
+        //public static void TextMaxString(string text, out string result)
+        //{
+        //    text += ' ';
+        //    var number = 0;
+        //    var MaxNumberText = 0;
+        //    result = string.Empty; 
+
+        //    for (var i = 0; i < text.Length; i++)
+        //    {
+        //        number++;
+        //        if (text[i] == ' ')
+        //        {
+        //            if (number > MaxNumberText)
+        //            {
+        //                number -= 1;
+        //                MaxNumberText = number;
+        //                result = text.Substring(i - number, number);
+        //                number = 0;
+        //            }
+        //            number = 0;
+        //        }
+        //    }
+        //}
+        //static void Main(string[] texts)
+        //{
+        //    var text = Console.ReadLine();
+
+        //    string result;
+        //    TextMaxString(text, out result);
+
+        //    Console.WriteLine(result);
+        //}
+
+        //3 Stringdagi harflarni ularning qanchalik tez-tez kelishiga qarab tartiblang. Eng ko'p keladigan harflar birinchi bo'ladi.
+        //        Misol: Kiritish: "dasturlash", Natija: "aasstddurlh"
+        //Takroriy So'zlarni O'chirish
+
+        //public static void TextMaxString(string text, out string result)
+        //{
+        //    result = string.Empty;
+
+        //    for (var i = 0; i < text.Length; i++)
+        //    {
+        //        for (var j = i+1; j < text.Length; j++)
+        //        {
+        //            if (text[i] == text[j])
+        //            {
+        //                result += text[i];
+        //                result += text[j];
+        //                text = text.Replace(text[i], ' ');
+        //            }
+        //        }
+        //    }
+        //    result += text;
+        //    result = result.Replace(" ", "");
+
+        //}
+        //static void Main(string[] texts)
+        //{
+        //    var text = Console.ReadLine();
+
+        //    string result;
+        //    TextMaxString(text, out result);
+
+        //    Console.WriteLine(result);
+        //}
+
+        ////////////// Murakkab Vazifalar (5 ta vazifa) - 3 ///////////////
+        //2 Stringdagi eng uzun palindromik qismni topish kerak.Palindromik qism - o'ngdan chapga va chapdan o'ngga bir xil o'qiladigan qism.
+        //Misol: Kiritish: "babad", Natija: "bab" yoki "aba"
+
+        //public static bool IsPalidrom(string text)
+        //{
+        //    var palidromText = string.Empty;
+        //    text = text.ToLower();
+
+        //    for (int i = text.Length - 1; i >= 0; i--)
+        //    {
+        //        palidromText += text[i];
+        //    }
+        //    return palidromText == text;
+        //}
+        //static void Main(string[] textd)
+        //{
+        //    var text = Console.ReadLine();
+
+        //    var check = string.Empty;
+        //    for (int i = 0; i < text.Length; i++)
+        //    {
+        //        check += text[i];
+        //        for (int j = i+1; j <= text.Length-1; j++)
+        //        {
+        //            check += text[j];
+        //            if (text[i] == text[j] && check.Length > 2)
+        //            {
+        //                if (IsPalidrom(check) is true)
+        //                {
+        //                    Console.Write($"{check} : ");
+        //                    check = string.Empty;
+        //                }
+        //            }
+        //        }
+        //        check = string.Empty;
+        //    }
+        //}
+
+        //3 Berilgan stringni raqamga aylantiring, lekin Int32.Parse yoki shu kabi funksiyalardan foydalanmasdan.
+        //Misol: Kiritish: "123", Natija: 123
+
+        //static void Main(string[] texts)
+        //{
+        //    Console.Write("Number; ");
+        //    var text = Console.ReadLine();
+
+        //    var result = 0;
+        //    foreach (var intText in text)
+        //    {
+        //        var digit = intText - '0';
+        //        result = result * 10 + digit;
+        //    }
+
+        //    Console.WriteLine(result);
+        //}
+
+        //4 Ikkita string uchun umumiy boshlang'ich prefiksni toping, ya'ni ikkala stringning boshida bir xil ketma-ketlikda keladigan qismni toping.
+        //Misol: Kiritish: "gulzor", "gullar", Natija: "gul"
+        //Tenglangan Qavslarni Tekshirish
+
+        //static void Main(string[] texts)
+        //{
+        //    var firstText = Console.ReadLine();
+        //    var secondText = Console.ReadLine();
+
+        //    var minLength = Math.Min(firstText.Length, secondText.Length);
+        //    var collect = string.Empty;
+
+        //    for (int i = 0; i < minLength; i++)
+        //    {
+        //        if (firstText[i] == secondText[i])
+        //        {
+        //            collect += firstText[i];
+        //        }
+        //        else
+        //        {
+        //            break;
+        //        }
+        //    }
+        //    Console.WriteLine(collect);
+
+        //}
+    }
+}
