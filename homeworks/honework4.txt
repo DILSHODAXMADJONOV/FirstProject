@@ -372,5 +372,35 @@ namespace g10
         //    Console.WriteLine(collect);
 
         //}
+
+        static void Main(string[] args)
+{
+    var text = Console.ReadLine();
+
+    bool result;
+    SympolText(text, out result);
+
+    Console.WriteLine(result);
+}
+public static void SympolText(string text, out bool result)
+{
+    var firstcollect = 0;
+    var secondcollect = 0;
+    result = false;
+
+    for (int i = 0; i < text.Length; i++)
+    {
+        if (text[i] == '(')
+        {
+            firstcollect++;
+        }
+        else if (text[i] == ')')
+        {
+            secondcollect++;
+        }
+    }
+
+    result = firstcollect == secondcollect;
+}
     }
 }
