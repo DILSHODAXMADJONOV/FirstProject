@@ -1,0 +1,377 @@
+namespace g10;
+
+internal class Program
+{
+    //23. 
+    //N ta elementdan iborat 1 o‘lchamli list berilgan.Eng katta elementi bilan eng kichik elementini joyini almashtiring.Va listni chiqaring.
+
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length : ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var numbers = FillAndGetList(length);
+    //    MaxToMin(numbers);
+    //    Digit(numbers);
+    //}
+
+    //24. 
+    //N ta elementdan iborat 1 o‘lchamli list berilgan.Elementlar yig‘indisini aniqlang
+
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length : ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var numbers = FillAndGetList(length);
+    //    int result;
+    //    SumOfElements(numbers, out result);
+    //    Console.WriteLine($"Jami; {result}");
+    //}
+
+    //25. n ta elementdan tashkil topgan massiv berilgan. 
+    //Massiv elementlari orasidan yig'indisi eng katta bo'ladigan 2 ta qo'shni elementni chiqaruvchi  programma tuzilsin.
+
+    //static void Main(string[] texts)
+    //{
+    //    var sizeArray = int.Parse(Console.ReadLine());
+    //    var numbers = new int[sizeArray];
+    //    FillArray(numbers);
+    //    AdjacentLargeElement(numbers);
+    //}
+
+    //26. n ta elementdan tashkil topgan massiv berilgan. 
+    // Massiv elementlari orasidan chap qo'shnisidan katta bo'lganlar sonini chiqaruvchi programma tuzilsin.
+
+    //static void Main(string[] texts)
+    //{
+    //    var sizeArray = int.Parse(Console.ReadLine());
+    //    var numbers = new int[sizeArray];
+    //    FillArray(numbers);
+    //    LeftMaxElement(numbers);
+    //}
+
+    //27. n ta elementdan tashkil topgan 2 ta massiv berilgan.
+    //listni mos elementlar ko'paytmasidan tashkil topgan yangi list hosil qiling va ekranga chiqaring.
+
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length: ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var firstNumbers = FillAndGetListFirst(length);
+    //    var secondNumbers = FillAndGetListSecond(length);
+
+    //    DigitFirst(firstNumbers);
+    //    DigitFirst(secondNumbers);
+    //    NewList(firstNumbers, secondNumbers);
+    //}
+
+    //28. n ta elementdan tashkil topgan string massiv berilgan.'$' bilan boshlanadigan elementlar miqdorini aniqlang.
+
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length: ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var listText = FillAndGetListText(length);
+
+    //    StartElement(listText);
+    //}
+
+    //29. n ta elementdan tashkil topgan string massiv berilgan.
+    //Hamma belgisi katta harf bo'lgan elementlarini ekranga chiqaruvchi dastur tuzing. 
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length: ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var listText = FillAndGetListText(length);
+    //    BigLetter(listText);
+    //}
+
+    //30.n ta butun sonlardan iborat massiv berilgan.
+    //Massivdagi har bir juft sonni birinchi uchragan juft songa orttiruvchi programma tuzilsin.
+
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length : ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var numbers = FillAndGetList(length);
+
+    //    EvenNumberMultiply(numbers);
+    //    Digit(numbers);
+    //}
+
+    //31.n ta butun sonlardan iborat massiv berilgan. 
+    //Massivdagi har bir toq sonni oxirgi toq songa orttiruvchi programma tuzilsin.
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length : ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var numbers = FillAndGetList(length);
+
+    //    OddNumberMultiply(numbers);
+    //    Digit(numbers);
+    //}
+
+    //32.n ta elementdan tashkil topgan massiv berilgan. 
+    //Massivning juft indeksli elementlari orasidan kichigini aniqlovchi programma tuzilsin.min(a0, a2, a4, ...)
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length : ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var numbers = FillAndGetList(length);
+
+    //    Digit(numbers);
+    //    Console.WriteLine($"Juft indeksli elementlar orasidagi eng kichik qiymat: {MinEvenIndexed(numbers)}");
+    //}
+
+    //33.n ta elementdan tashkil topgan a va b massiv berilgan. c massivni hosil qiling. c[i] = max(a[i], b[i]),
+    // ya'ni c massivning i-elementi a va b massivlarning i-elementlaridan kattasini qabul qilsin.
+    //static void Main(string[] texts)
+    //{
+    //    Console.Write("Enter length: ");
+    //    var length = int.Parse(Console.ReadLine());
+    //    var firstNumbers = FillAndGetListFirst(length);
+    //    var secondNumbers = FillAndGetListSecond(length);
+
+    //    DigitFirst(firstNumbers);
+    //    DigitFirst(secondNumbers);
+    //    MaxIndexeNewList(firstNumbers, secondNumbers);
+    //}
+    public static void MaxToMin(List<int> numbers)
+    {
+        var maxNumber = numbers.Max();
+        var minNumber = numbers.Min();
+        for (int i = 0; i < numbers.Count; i++)
+        {
+            if (numbers[i] == maxNumber)
+            {
+                numbers[i] = minNumber;
+            }
+            else if (numbers[i] == minNumber)
+            {
+                numbers[i] = maxNumber;
+            }
+        }
+    }
+    public static void SumOfElements(List<int> numbers, out int total)
+    {
+        total = 0;
+
+        foreach (int number in numbers)
+        {
+            total += number;
+        }
+    }
+    public static void AdjacentLargeElement(int[] numbers)
+    {
+        var maxSum = int.MinValue;
+        var firestElement = 0;
+        var secondElement = 0;
+
+        for (int i = 0; i < numbers.Length - 1; i++)
+        {
+            var currentSum = numbers[i] + numbers[i + 1];
+            if (currentSum > maxSum)
+            {
+                maxSum = currentSum;
+                firestElement = numbers[i];
+                secondElement = numbers[i + 1];
+            }
+        }
+        Console.WriteLine($"{firestElement} : {secondElement}");
+    }
+    public static void LeftMaxElement(int[] numbers)
+    {
+        var maxSum = int.MinValue;
+        var IndexElement = 0;
+
+        for (int i = 0; i < numbers.Length - 1; i++)
+        {
+            if (numbers[i] > maxSum)
+            {
+                maxSum = numbers[i];
+                IndexElement = i;
+            }
+        }
+        Console.WriteLine($"{numbers[IndexElement + 1]}");
+    }
+    public static void FillArray(int[] numbers)
+    {
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.Write($"{i} : ");
+            numbers[i] = int.Parse(Console.ReadLine());
+        }
+    }
+    public static List<int> FillAndGetList(int length)
+    {
+        var digits = new List<int>();
+        for (int i = 0; i < length; i++)
+        {
+            Console.Write($"{i} : ");
+            var number = int.Parse(Console.ReadLine());
+            digits.Add(number);
+        }
+
+        return digits;
+    }
+    public static void Digit(List<int> digits)
+    {
+        foreach (var digit in digits)
+        {
+            Console.Write($"{digit} ");
+        }
+        Console.WriteLine();
+    }
+    public static void NewList(List<int> firstNumbers, List<int> secondNumber)
+    {
+        var thirdList = new List<int>();
+        for (int i = 0; i < firstNumbers.Count; i++)
+        {
+            if (firstNumbers[i] == secondNumber[i])
+            {
+                thirdList.Add(firstNumbers[i] * secondNumber[i]);
+            }
+        }
+        Digit(thirdList);
+
+
+    }
+    public static List<int> FillAndGetListFirst(int length)
+    {
+        var digits = new List<int>();
+        for (int i = 0; i < length; i++)
+        {
+            Console.Write($"{i} : ");
+            var number = int.Parse(Console.ReadLine());
+            digits.Add(number);
+        }
+
+        return digits;
+    }
+    public static List<int> FillAndGetListSecond(int length)
+    {
+        var digits = new List<int>();
+        for (int i = 0; i < length; i++)
+        {
+            Console.Write($"{i} : ");
+            var number = int.Parse(Console.ReadLine());
+            digits.Add(number);
+        }
+
+        return digits;
+    }
+    public static void DigitFirst(List<int> digits)
+    {
+        foreach (var digit in digits)
+        {
+            Console.Write($"{digit} ");
+        }
+        Console.WriteLine();
+    }
+    public static void DigitSecond(List<int> digits)
+    {
+        foreach (var digit in digits)
+        {
+            Console.Write($"{digit} ");
+        }
+        Console.WriteLine();
+    }
+    public static void StartElement(List<string> texts)
+    {
+        var collect‌‌ = 0;
+        for (int i = 0; i < texts.Count; i++)
+        {
+            if (texts[i].StartsWith('$'))
+            {
+                collect++;
+            }
+        }
+        Console.WriteLine($"{collect} ta '$' text bor");
+    }
+    public static void BigLetter(List<string> texts)
+    {
+        for (int i = 0; i < texts.Count; i++)
+        {
+            var inspection = true;
+            foreach (var BigElement in texts[i])
+            {
+                if (char.IsLower(BigElement) is true)
+                {
+                    inspection = false;
+                    break;
+                }
+            }
+            if (inspection == true)
+            {
+                Console.Write($"{texts[i]} ; ");
+            }
+
+        }
+    }
+    public static List<string> FillAndGetListText(int length)
+    {
+        var text = new List<string>();
+        for (int i = 0; i < length; i++)
+        {
+            Console.Write($"{i} : ");
+            text.Add(Console.ReadLine());
+        }
+        return text;
+    }
+    public static void EvenNumberMultiply(List<int> number)
+    {
+        for (var i = 0; i < number.Count - 1; i++)
+        {
+            if (number[i] % 2 == 0)
+            {
+                for (var j = i + 1; j < number.Count; j++)
+                {
+                    if (number[j] % 2 == 0)
+                    {
+                        number[i] = number[i] * number[j];
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    public static void OddNumberMultiply(List<int> number)
+    {
+        for (var i = 0; i < number.Count; i++)
+        {
+            if (number[i] % 2 == 1)
+            {
+                for (var j = number.Count - 1; j > 0; j--)
+                {
+                    if (number[j] % 2 == 1)
+                    {
+                        number[i] = number[i] * number[j];
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    public static int MinEvenIndexed(List<int> number)
+    {
+        var minValue = int.MaxValue;
+
+        for (var i = 0; i < number.Count; i += 2)
+        {
+            if (number[i] < minValue)
+            {
+                minValue = number[i];
+            }
+        }
+
+        return minValue;
+    }
+    public static void MaxIndexeNewList(List<int> firstList, List<int> secondList)
+    {
+        var thirdList = new List<int>();
+
+        thirdList.Add(firstList.Max());
+        thirdList.Add(secondList.Max());
+
+        Digit(thirdList);
+    }
+}
